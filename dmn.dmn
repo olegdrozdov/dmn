@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn11.xsd" id="definitions" name="definitions" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="dmn" name="dmn">
+    <decisionTable id="decisionTable">
+      <input id="InputClause_1esw3ni" label="sum">
+        <inputExpression id="LiteralExpression_1x36j5l" typeRef="double">        <text>sum</text>
+</inputExpression>
+      </input>
+      <output id="output1" label="b" name="b" typeRef="double" />
+      <rule id="row-665509025-1">
+        <inputEntry id="UnaryTests_1aun4k2">        <text></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_17puxsy" expressionLanguage="javascript">        <text>java.math.BigDecimal.valueOf(sum*0.1125).setScale(2, 1).doubleValue()</text>
+</outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
